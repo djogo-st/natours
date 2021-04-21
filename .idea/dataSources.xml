@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Natorus MongoDB" uuid="f5cb4ad2-a748-4370-83b9-79f7ddd6be4c">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb+srv://cluster0.ei9fc.mongodb.net/admin?authSource=admin&amp;replicaSet=atlas-fkl5r1-shard-0&amp;readPreference=primary&amp;appname=MongoDB%20Compass&amp;ssl=true</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
