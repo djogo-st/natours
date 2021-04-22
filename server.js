@@ -32,9 +32,15 @@ const server = app.listen(port, () => {
 process.on('unhandledRejection', err => {
   // async code error handling
   console.log('UNHANDLED REJECTION!!!! Shutting down.....');
-  // TODO: still have to correct this part
   console.log(err.name, err.message);
   server.close(() => {
     process.exit(1);
   });
 });
+
+process.on('SIGALRM', () => {
+  console.log('SIGALRM RECEIVED. Shutting down gracefully');
+  server.close(() => {
+    console.log('Process terminated!!!!');
+  });
+})
